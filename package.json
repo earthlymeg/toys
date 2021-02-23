@@ -1,0 +1,19 @@
+{
+  "name": "toys",
+  "version": "1.0.0",
+  "description": "",
+  "main": "factorial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/earthlymeg/toys.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/earthlymeg/toys/issues"
+  },
+  "homepage": "https://github.com/earthlymeg/toys#readme"
+}
