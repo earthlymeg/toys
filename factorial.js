@@ -7,6 +7,8 @@ const factorial = (num) => {
   } else {
       return num * factorial(num - 1);
   }
+// return (num !== 1 ? factorial(num - 1) : 1);
+
 }
 
 console.log(factorial(5))
