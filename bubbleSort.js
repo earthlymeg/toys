@@ -4,15 +4,16 @@ const bubbleSort = (arr) => {
     //define k = 0    
     
     for (let j = 0; j < i - 1; j++) {
-        console.log(arr, 'comparing:', arr[j], arr[j+1])
+        // console.log(arr, 'comparing:', arr[j], arr[j+1])
          
           if (arr[j+1] < arr[j]) {
-              let temp = arr[j+1];
-              arr[j+1] = arr[j];
-              arr[j] = temp;
+            //   let temp = arr[j+1];
+            //   arr[j+1] = arr[j];
+            //   arr[j] = temp;
+              [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
           } 
       }
-      console.log('ONE PASS')
+    //   console.log('ONE PASS')
   }
   console.log(arr)
   return arr;
