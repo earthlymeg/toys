@@ -34,7 +34,23 @@ const merge = (arr1, arr2) => {
 
 }
 
+const mergeSort = (arr) => {
+    if (arr.length <= 1 ) {
+        console.log('returning', arr)
+        return arr;
+    }
 
-let first = [1,3,5]
-let second = [-1]
-merge(first, second)
+    else {
+      let left = arr.slice(0, arr.length/2);
+      let right = arr.slice(arr.length/2)
+      console.log('L+R', left, right)
+      mergeSort(left);
+      mergeSort(right)
+    }
+}
+
+
+
+let first = [1,3,5,6,8,9];
+// let second = [-1]
+mergeSort(first);
