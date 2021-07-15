@@ -25,15 +25,24 @@ function minimumBribes(q) {
       //if any value is > 2 
       //print 'too chaotic' and return
     
-    // for (let j = 0; j < Object.values(storage); j++) {
-    //   let current =       
-    // }
+    for (let j = 0; j < Object.values(storage).length; j++) {
+      let current = Object.values(storage)[j];
+    //   console.log(j)
+      if (current > 0) {
+        count += current;
+      } if (current > 2) {
+          console.log('too chaotic');
+          return;
+      }       
+    }
+
+    console.log(count);
 
 
 
 }
 
-minimumBribes([2, 1, 5, 3, 4]);
+minimumBribes([1,2,5,3,7,8,6,4]);
 
 //expect
 // {
