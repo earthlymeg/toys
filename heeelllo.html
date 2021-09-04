@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div>
+          <h1>Selected action: {{ lastClickedButton }}</h1>
+          <ul>
+            <li>
+              <button class='my-button' @click='setLastClicked("Email"); sendEmail()'>Email</button>
+            </li>
+            <li>
+              <button class='my-button' @click='setLastClicked("Fax"); sendFax()'>Fax</button>
+            </li>
+            <li>
+              <button class='my-button' @click='setLastClicked("Copy"); copyDetails()'>Copy</button>
+            </li>
+          </ul
+        </div>
+      
+      
+      <script src='./hello.js'>
+      </script>
+    
+</body>
+</html>
