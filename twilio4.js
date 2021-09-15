@@ -19,9 +19,7 @@ function segments(message) {
         let tempStr = '';
         while (tempStr.length <= 155 && i < arrOfStrings.length) {
             let checkingLength = tempStr + arrOfStrings[i];
-            // if (checkingLength.length > 155) {
-            //     console.log(checkingLength, checkingLength.length)
-            // }
+     
             if (checkingLength.length > 155) {
 
                 break;
